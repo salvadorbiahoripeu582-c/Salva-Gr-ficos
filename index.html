@@ -1,24 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salva Graficos</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:#fff;font-family:Arial;padding-bottom:80px}
-.top{position:sticky;top:0;background:#000000e6;padding:12px 16px;display:flex;justify-content:space-between;border-bottom:1px solid #1a1a1a}
-.profile{padding:20px 16px;display:flex;gap:14px}
-.avatar{width:78px;height:78px;border-radius:50%;background:linear-gradient(45deg,#FF4D00,#FF9900);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:28px;color:#000}
-.socials{padding:0 16px 12px 16px;display:flex;gap:8px}
-.socials a{flex:1;text-align:center;padding:11px;border-radius:12px;text-decoration:none;font-weight:800;font-size:13px;color:#fff}
-.s-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
-.s-fb{background:#1877F2}
-.s-yt{background:#FF0000}
-.btns{padding:0 16px 14px 16px;display:flex;gap:8px}
-.btn{flex:1;text-align:center;padding:13px;border-radius:12px;text-decoration:none;font-weight:800;font-size:14px}
-.b1{background:#fff;color:#000}.b2{background:#25D366;color:#fff}
-.feed{padding:2px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px}
-.feed div{aspect-ratio:1;background:#111}
-.feed img{width:100%;height:100%;object-fit:cover}
-.bottom{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101410">
+  <meta name="description" content="Gráficos Salva: diseño gráfico para artistas, negocios y empresas en Malabo.">
+  <title>Gráficos Salva | Diseño gráfico</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Gráficos Salva, inicio">
+      <span class="brand-mark">GS</span>
+      <span>GRÁFICOS <b>SALVA</b></span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menú">☰</button>
+    <nav id="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="eyebrow"><span class="dot"></span> ESTUDIO CREATIVO · MALABO</div>
+      <h1>Tu idea.<br><span>Mi diseño.</span><br>Tu marca destaca.</h1>
+      <p>Diseño gráfico para artistas, negocios y empresas. Imagen profesional, creatividad y atención personalizada.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#contacto">Solicitar un diseño <span>↗</span></a>
+        <a class="button secondary" href="#trabajos">Ver trabajos</a>
+      </div>
+      <div class="hero-foot"><span>IDENTIDAD VISUAL</span><span>FLYERS MUSICALES</span><span>PUBLICIDAD</span></div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">LO QUE HAGO</p>
+        <h2>Diseños que hablan<br>por tu negocio.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-num">01</span><div class="service-icon">✳</div><h3>Flyers y carteles</h3><p>Lanzamientos musicales, eventos, promociones y anuncios.</p></article>
+        <article class="service-card"><span class="service-num">02</span><div class="service-icon">◈</div><h3>Logotipos</h3><p>Una identidad visual clara para destacar y ser recordado.</p></article>
+        <article class="service-card"><span class="service-num">03</span><div class="service-icon">▧</div><h3>Publicidad para negocios</h3><p>Diseños para restaurantes, tiendas, marcas y empresas.</p></article>
+        <article class="service-card"><span class="service-num">04</span><div class="service-icon">▤</div><h3>Portadas musicales</h3><p>Arte visual para singles, álbumes y proyectos de artistas.</p></article>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="trabajos">
+      <div class="section-heading">
+        <p class="eyebrow">PORTAFOLIO</p>
+        <h2>Una muestra de<br><span>mi creatividad.</span></h2>
+        <p class="section-note">Estos espacios son ejemplos iniciales. Sustitúyelos por tus diseños reales antes de publicar.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="work work-one"><span>01 / MÚSICA</span><div class="art-title">SOUND<br><i>IN MOTION</i></div><small>Flyer musical</small></article>
+        <article class="work work-two"><span>02 / MARCA</span><div class="art-title">YOUR<br><i>IDENTITY</i></div><small>Identidad visual</small></article>
+        <article class="work work-three"><span>03 / NEGOCIO</span><div class="art-title">MADE TO<br><i>STAND OUT</i></div><small>Publicidad comercial</small></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <p class="eyebrow">¿TRABAJAMOS JUNTOS?</p>
+      <h2>Cuéntame tu idea.<br><span>Vamos a diseñarla.</span></h2>
+      <p>Escríbeme para consultar precios, plazos y disponibilidad.</p>
+      <a class="button primary" id="whatsappLink" href="#" target="_blank" rel="noopener">Contactar por WhatsApp ↗</a>
+      <p class="contact-hint" id="contactHint">Antes de publicar, añade tu número de WhatsApp en el archivo app.js.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">GS</span><span>GRÁFICOS <b>SALVA</b></span></a>
+    <p>Diseño gráfico para artistas, negocios y empresas · Malabo</p>
+    <small>© <span id="year"></span> Gráficos Salva</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
